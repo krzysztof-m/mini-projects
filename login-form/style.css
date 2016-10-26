@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+* {
+  box-sizing: border-box; }
+
+body {
+  background: url("bg-form.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+.login-wrapper {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 150px auto;
+  width: 60%;
+  min-height: 300px;
+  position: relative; }
+  .login-wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .login-wrapper h2 {
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    text-align: center; }
+  .login-wrapper p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: justify; }
+  @media (max-width: 1500px) {
+    .login-wrapper {
+      width: 80%; } }
+  @media (max-width: 1000px) {
+    .login-wrapper {
+      width: 95%;
+      margin-top: 20px; } }
+
+.col {
+  width: 46%;
+  margin: 0 2%;
+  float: left;
+  padding: 50px 0; }
+  @media (max-width: 780px) {
+    .col {
+      width: 100%;
+      margin: 0;
+      padding: 30px; } }
+
+.log-in {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f60;
+  padding: 80px 50px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  bottom: -30px;
+  color: #fff; }
+  @media (max-width: 780px) {
+    .log-in {
+      position: static;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; } }
+  @media (max-width: 400px) {
+    .log-in {
+      padding: 30px; } }
+
+.sign-up h2 {
+  color: #f60; }
+.sign-up button {
+  border: 1px #f60 solid;
+  background: rgba(255, 255, 255, 0.5);
+  color: #f60;
+  padding: 7px 15px;
+  display: block;
+  margin: 0 auto;
+  transition: all .2s linear;
+  font-size: 15px;
+  cursor: pointer; }
+  .sign-up button:hover {
+    background: #f60;
+    color: #fff; }
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #fff; }
+
+input[type="text"],
+input[type="password"] {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  width: 100%;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 0); }
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    border: 2px solid rgba(255, 255, 255, 0.3); }
+
+input[type="submit"] {
+  background: transparent;
+  border: 1px #fff solid;
+  padding: 7px 15px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .2s linear; }
+  input[type="submit"]:hover {
+    background: #fff;
+    color: #f60; }
+
+/*# sourceMappingURL=style.css.map */

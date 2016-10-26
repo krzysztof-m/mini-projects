@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@mixin border-radius($r:10px) {
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  border-radius: $r;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url("bg-form.jpg") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.login-wrapper {
+  @include border-radius;
+  background: rgba(256,256,256,.5);
+  margin: 150px auto;
+  width: 60%;
+  min-height: 300px;
+  position: relative;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  h2 {
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+    text-align: justify;
+  }
+  @media (max-width: 1500px) {
+    width: 80%;
+  }
+  @media (max-width: 1000px) {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+.col {
+  width: 46%;
+  margin: 0 2%;
+  float: left;
+  padding: 50px 0;
+  @media (max-width: 780px) {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+  }
+}
+.log-in {
+  @include border-radius;
+  background: #f60;
+  padding: 80px 50px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  bottom: -30px;
+  color: #fff;
+  @media (max-width: 780px) {
+    position: static;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  @media (max-width: 400px) {
+    padding: 30px;
+  }
+}
+.sign-up {
+  h2 {
+    color: #f60;
+  }
+  button {
+    border: 1px #f60 solid;
+    background: rgba(256,256,256,.5);
+    color: #f60;
+    padding: 7px 15px;
+    display: block;
+    margin: 0 auto;
+    transition: all .2s linear;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover {
+      background: #f60;
+      color: #fff;
+    }
+  }
+}
+input {
+  font: {
+    family: 'Open Sans', sans-serif;
+    size: 15px;
+  }
+  color: #fff;
+}
+input[type="text"],
+input[type="password"] {
+  background: rgba(256,256,256,.3);
+  border: none;
+  width: 100%;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border: 2px solid rgba(256,256,256,0);
+  &:focus {
+    border: 2px solid rgba(256,256,256,.3);
+  }
+}
+input[type="submit"] {
+  background: transparent;
+  border: 1px #fff solid;
+  padding: 7px 15px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all .2s linear;
+  &:hover {
+    background: #fff;
+    color: #f60;
+  }
+}
