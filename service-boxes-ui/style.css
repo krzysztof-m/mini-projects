@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: Open Sans;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #efefef; }
+
+.container {
+  background: #F6F4EF;
+  padding: 50px 0;
+  background: linear-gradient(to bottom, #3E4C57 50%, #CEC5B4 50%, #efefef); }
+  .container .row {
+    width: 50%;
+    margin: 0 auto;
+    position: relative; }
+    .container .row .card {
+      width: 33%;
+      float: left;
+      padding: 20px 40px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.4);
+      height: 450px;
+      text-align: center;
+      z-index: 1; }
+      @media (max-width: 750px) {
+        .container .row .card {
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto 20px;
+          height: 100%;
+          float: none; } }
+    .container .row .card-center {
+      position: relative;
+      top: -25px;
+      height: 500px;
+      z-index: 99;
+      padding: 45px 40px; }
+      @media (max-width: 750px) {
+        .container .row .card-center {
+          padding: 20px 40px;
+          top: auto;
+          height: auto; } }
+    .container .row .card-left {
+      transform: translateX(20px); }
+      @media (max-width: 750px) {
+        .container .row .card-left {
+          transform: translateX(0); } }
+    .container .row .card-right {
+      transform: translateX(-20px); }
+      @media (max-width: 750px) {
+        .container .row .card-right {
+          transform: translateX(0); } }
+    @media (max-width: 1400px) {
+      .container .row {
+        width: 80%; } }
+    @media (max-width: 900px) {
+      .container .row {
+        width: 95%; } }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.icon {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  vertical-align: center;
+  border-radius: 50%;
+  background: #3E4C57;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+.card h3 {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+.card p {
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 20px; }
+.card a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px #D5CEC0 solid;
+  color: #3E4C57;
+  text-decoration: none;
+  transition: all .2s linear; }
+  .card a:hover {
+    color: #fff;
+    background: #3E4C57; }
+
+/*# sourceMappingURL=style.css.map */
