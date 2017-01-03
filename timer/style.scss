@@ -1,0 +1,49 @@
+$color: #e5e5e5;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+body {
+  background-color: $color;
+}
+h1 {
+  text-align: center;
+}
+.timer-wrapper {
+  background-color: #fff;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(#000,.4);
+}
+.timer {
+  text-align: center;
+  font-size: 50px;
+}
+.timer-controls {
+  list-style: none;
+  text-align: center;
+  margin: 20px 0 0;
+  padding: 0;
+  li {
+    margin: 5px 0;
+    @media(min-width: 400px) {
+      display: inline-block;
+    }
+  }
+  button {
+    background-color: transparent;
+    border: 2px $color solid;
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 100%;
+    &[disabled="disabled"] {
+      background-color: $color;
+      cursor: initial;
+    }
+  }
+}
